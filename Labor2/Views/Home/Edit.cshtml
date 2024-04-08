@@ -1,0 +1,8 @@
+﻿@model DataBaseModel
+
+@using (Html.BeginForm())
+{
+    @Html.LabelForModel()
+    @Html.EditorForModel()
+    <input type="submit" value="Save" />
+}

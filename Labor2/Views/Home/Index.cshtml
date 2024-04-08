@@ -1,0 +1,29 @@
+﻿@model DataBaseModel
+
+@using (Html.BeginForm("Edit", "Database", FormMethod.Post))
+{
+    <div class="form-element">
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+
+    <div class="form-element">
+        @Html.LabelFor(m => m.CreationDate)
+        @Html.EditorFor(m => m.CreationDate)
+    </div>
+
+    <div class="form-element">
+        @Html.LabelFor(m => m.RecordCount)
+        @Html.EditorFor(m => m.RecordCount)
+    </div>
+
+    <div class="form-element">
+        @Html.LabelFor(m => m.Description)
+        @Html.EditorFor(m => m.Description)
+    </div>
+
+    <div class="form-element">
+        @Html.LabelFor(m => m.IsImportant)
+        @Html.EditorFor(m => m.IsImportant)
+    </div>
+}
